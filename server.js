@@ -4,7 +4,7 @@ var server = connect()
     .use(function (request, response) {
         response.statusCode = 403;
         response.end("You have reached the end of the Internet.");
-    }).listen(4005);
+    }).listen(4006);
 
 var socketio = require("socket.io");
 var clients = socketio.listen(server);
