@@ -35,7 +35,7 @@ var Game = (function (G, $, THREE) {
         if (options.callback instanceof Function) options.callback(self); // run callback if any
     };
 
-    var player = new G.Player({
+    var examplePlayer = new G.Player({
         callback: function(self){
             // TODO: Figure out a better aspect ratio or some way to handle aspect ratios
             self.geometry.position.x = -100; // Place player at some default position
