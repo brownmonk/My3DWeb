@@ -1,10 +1,10 @@
-exports.login = function (clients, client) {
-    // TODO: Login services (if any)
-}
+exports.newPlayer = function (clients, client) {
+    // TODO: Do something when a new player has joined
+};
 
 // Tools
 function makeSafe(text) {
-    // TODO: Security featuers
+    // TODO: Security features
     try {
         return String(text).replace(/<(?:.|\n)*?>/gm, '');
     } catch (err) {
