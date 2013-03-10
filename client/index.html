@@ -1,7 +1,6 @@
 <!Doctype html>
 <html>
 	<head>
-        <title>My 3d Web - Version 0.1</title>
 		<meta name="robots" content="noindex" />
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -18,12 +17,29 @@
         <script src="javascript/libraries/three/three.min.js"></script>
         <script src="javascript/libraries/three/CSS3DRenderer.js"></script>
         <script src="javascript/libraries/three/tween.min.js"></script>
+        <!-- Local -->
+
+        <script src="javascript/init.js"></script>
+
+        <script src="javascript/My3DWeb/GameArea.js"></script>
+        <script src="javascript/My3DWeb/My3DWeb.js"></script>
+
 		</head>
 
 		<body>
+            <div style="margin-left:50px">
+                <h1>Test</h1>
+            </div>
+
+
+            <div id="container">
+                
+            </div>
             <div id="menu">
-                <button >MENU OPTION</button>
-                <button >MENU OPTION</button>
+                <button id="layout1">LAYOUT 1</button>
+                <button id="layout2">LAYOUT 2</button>
+                <button id="layout3">FLIP</button>
+                <button id="layout4">GRID</button>
             </div>
 		</body>
 
@@ -31,4 +47,6 @@
         <script src="javascript/init.js"></script>
         <script src="javascript/player.js"></script>
         <!--<script src="javascript/My3dWeb/demo.js"></script> -->
+        <!--<script src="javascript/My3DWeb/Global.js"></script>-->
+		<title>My 3d Web - Version 0.1.1</title>
 </html>

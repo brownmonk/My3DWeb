@@ -24,7 +24,7 @@ var Game = (function (G, $, THREE) {
         G.GameBoard = {
             players: [] // Container for players
         };
-        G.GameBoard.Dimentions = {
+        G.GameBoard.Dimensions = {
             x:10,           // Number of tiles across
             y:6,            // Number of tiles down
             tileSize: 100   // Tile units are in pixels
@@ -34,10 +34,10 @@ var Game = (function (G, $, THREE) {
         G.GameBoard.$ = $('<div></div>') // Dom element attached to "$"
             .attr('id','gameBoard')
             .css({
-                width:G.GameBoard.Dimentions.tileSize * G.GameBoard.Dimentions.x,
-                height:G.GameBoard.Dimentions.tileSize * G.GameBoard.Dimentions.y,
-                backgroundSize: G.GameBoard.Dimentions.tileSize + "px " +
-                    G.GameBoard.Dimentions.tileSize + "px"
+                width:G.GameBoard.Dimensions.tileSize * G.GameBoard.Dimensions.x,
+                height:G.GameBoard.Dimensions.tileSize * G.GameBoard.Dimensions.y,
+                backgroundSize: G.GameBoard.Dimensions.tileSize + "px " +
+                    G.GameBoard.Dimensions.tileSize + "px"
             })
             .appendTo($('body'));
 
