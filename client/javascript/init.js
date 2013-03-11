@@ -9,10 +9,10 @@ var Game = (function (G, $, THREE) {
     }
     // Continue if dependencies are present
 
-    var old_client = G.client;          // save old client (if any)
-    var old_clientPort = G.clientPort;  // save old port (if any)
-    var old_gameBoard = G.GameBoard;    // save old Game Board (if any)
+    G.clientPort = ':4006'; // Port is arbitrarily 4006 if no port is previously declared
+    G.client = io.connect(G.clientPort); // Set up client if client isn't already set
 
+<<<<<<< HEAD
     if(!old_client) {
         if(!old_clientPort){
             G.clientPort = ':4006'; // Port is arbitrarily 4006 if no port is previously declared
@@ -113,6 +113,10 @@ var Game = (function (G, $, THREE) {
         };
         return Self;
     };
+=======
+
+
+>>>>>>> Tweaking
 
     $(function () {
         G.client.on('connect', function () {

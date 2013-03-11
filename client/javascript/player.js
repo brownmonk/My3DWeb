@@ -12,11 +12,19 @@ var Game = (function (G, $, THREE) {
         return G;
     }
 
+<<<<<<< HEAD
     var old_player = G.Player;    // save old Player (if any)
     if(!old_player) G.Player = function (options) {
         var Self = this;
         Self.name = options.name || "noname";
         Self.material = options.material || new THREE.MeshLambertMaterial({ // Players are gray by default
+=======
+
+     G.Player = function (options) {
+        self = this;
+        self.name = options.name || "noname";
+        self.material = options.material || new THREE.MeshLambertMaterial({ // Players are gray by default
+>>>>>>> Tweaking
             color:0xaaaaaa
         });
         Self.geometry = options.geometry || new THREE.Mesh(// Players are cubes by default
