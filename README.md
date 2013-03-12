@@ -13,7 +13,7 @@ var Game = (function (G) {
     // Your game code goes in here
 
     return G;
-}(Game || {});
+}(Game || {}));
 ```
 
 ### 2. Add game dependencies
