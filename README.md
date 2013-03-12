@@ -94,7 +94,7 @@ var Game = (function (G, $, THREE) {
 }(Game || {}, jQuery, THREE));
 ```
  ----
-# WTFs
+# Documentation
 ## The *Game* global
 ```javascript
 var Game = (function(G, $, THREE){
