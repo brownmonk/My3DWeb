@@ -83,6 +83,8 @@ var Game = (function (G, $, THREE) {
         name: 'Matt',
         gameId: 'myNewGame',
         callback: function(player){
+            // Optional callback that positions the player at some new X,Y coordinate.
+            // For now, you will need to manually refresh the scene if you do this.
             player.geometry.position.x = -100;
             player.geometry.position.y = 100;
             player.game.refresh();
@@ -92,5 +94,43 @@ var Game = (function (G, $, THREE) {
 }(Game || {}, jQuery, THREE));
 ```
  ----
-#Game
- 
+# WTFs
+## The *Game* global
+```javascript
+var Game = (function(G, $, THREE){
+    // Comments coming here... (3/12/2013)
+}(Game || {}, jQuery, THREE));
+```
+
+
+## *Game.GameBoard*
+#### G.GameBoard()
+```javascript
+var Game = (function(G, $, THREE){
+    G.GameBoard(); // Comments coming here... (3/12/2013)
+}(Game || {}, jQuery, THREE));
+```
+#### G.GameBoard(options)
+```javascript
+var Game = (function(G, $, THREE){
+    G.GameBoard({
+       // Comments coming here... (3/12/2013) 
+    });
+}(Game || {}, jQuery, THREE));
+```
+
+
+## *Game.Player*
+#### G.Player()
+```javascript
+var Game = (function(G, $, THREE){
+    G.Player(); // Comments coming here... (3/12/2013)
+}(Game || {}, jQuery, THREE));
+```
+#### G.Player(options)
+```javascript
+var Game = (function(G, $, THREE){
+    G.Player({
+       // Comments coming here... (3/12/2013) 
+    });
+}(Game || {}, jQuery, THREE));
