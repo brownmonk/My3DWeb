@@ -11,20 +11,10 @@ var Game = (function (G, $, THREE) {
         console.log('Game board is not loaded!'); // Abort if the game board is not loaded first
         return G;
     }
-
-<<<<<<< HEAD
-    var old_player = G.Player;    // save old Player (if any)
-    if(!old_player) G.Player = function (options) {
+    G.Player = function (options) {
         var Self = this;
         Self.name = options.name || "noname";
         Self.material = options.material || new THREE.MeshLambertMaterial({ // Players are gray by default
-=======
-
-     G.Player = function (options) {
-        self = this;
-        self.name = options.name || "noname";
-        self.material = options.material || new THREE.MeshLambertMaterial({ // Players are gray by default
->>>>>>> Tweaking
             color:0xaaaaaa
         });
         Self.geometry = options.geometry || new THREE.Mesh(// Players are cubes by default

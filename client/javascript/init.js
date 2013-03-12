@@ -12,16 +12,8 @@ var Game = (function (G, $, THREE) {
     G.clientPort = ':4006'; // Port is arbitrarily 4006 if no port is previously declared
     G.client = io.connect(G.clientPort); // Set up client if client isn't already set
 
-<<<<<<< HEAD
-    if(!old_client) {
-        if(!old_clientPort){
-            G.clientPort = ':4006'; // Port is arbitrarily 4006 if no port is previously declared
-        }
-        G.client = io.connect(G.clientPort); // Set up client if client isn't already set
-    }
-
     if(!G.activeGameboards) G.activeGameboards = []; // Create a container for active game boards
-    if(!old_gameBoard) G.GameBoard = function (options) {
+    G.GameBoard = function (options) {
         var Self = this;
         // Game board Dimensions and Tile size Management
         this.Dimensions = options.Dimensions || {
@@ -113,10 +105,6 @@ var Game = (function (G, $, THREE) {
         };
         return Self;
     };
-=======
-
-
->>>>>>> Tweaking
 
     $(function () {
         G.client.on('connect', function () {
